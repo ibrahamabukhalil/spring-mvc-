@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to the application!!!</title>
+  <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    .row{
+        margin-top: 20%;}
+
+
+  </style>
+</head>
+<body>
+<div class="row">
+  <div class="col-md-1"></div>
+  <div class="col-md-5">
+    <h1>to Create a game</h1>
+    <form action="/createGame" method="get">
+      <input type="text" name="creatorPlayerName" placeholder="enter your name">
+      <input type="number" name="newGameID" placeholder="enter your game id">
+      <input type="submit" value="create game" class="btn btn-success">
+    </form>
+  </div>
+  <div class="col-md-1"></div>
+  <div class="col-md-5">
+    <h1>to join an existing game</h1>
+    <form action="/joinGame" method="get">
+      <input type="text" name="playerName" placeholder="enter your name">
+      <input type="number" name="gameID" placeholder="enter the game id">
+      <input type="submit" value="join game" class="btn btn-info">
+    </form>
+  </div>
+</div>
+</body>
+</html>
